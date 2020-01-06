@@ -89,5 +89,11 @@ def main():
                 raise
 
 
-if __name__ == "__main__":
-	main()
+def mc_update_handler(event, context):
+    try:
+        main()
+        return { 
+            "status": "200"
+        }
+    except:
+        raise
