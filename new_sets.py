@@ -1,13 +1,15 @@
 import requests
 from twilio.rest import Client
 import config
+import os
 
-MISSION_CLIFFS_ENDPONT = config.MISSION_CLIFFS_ENDPONT
-IG_POST_ENDPOINT = config.IG_POST_ENDPOINT
-TWILIO_SID = config.TWILIO_SID
-TWILIO_AUTH_TOKEN = config.TWILIO_AUTH_TOKEN
-TWILIO_TRIAL_NUMBER = config.TWILIO_TRIAL_NUMBER
-NUMBERS = config.NUMBERS #list of numbers that will recieve text
+#set as env variables lambda console
+MISSION_CLIFFS_ENDPONT = os.getenv('MISSION_CLIFFS_ENDPONT')
+TWILIO_SID =  os.getenv('TWILIO_SID')
+TWILIO_AUTH_TOKEN =  os.getenv('TWILIO_AUTH_TOKEN')
+TWILIO_TRIAL_NUMBER =  os.getenv('TWILIO_TRIAL_NUMBER')
+#list of numbers that will recieve text
+NUMBERS = config.NUMBERS
 MOST_RECENT_POST_PATH = './most_recent_post.txt'
 NEW_ROUTE_KEYWORDS = [
 

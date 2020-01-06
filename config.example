@@ -1,8 +1,7 @@
 MISSION_CLIFFS_ENDPONT = f"{mission cliffs ig endpoint}"
-IG_POST_ENDPOINT = f"{ig post endpoint}"
 TWILIO_SID = f"{twilio SID}"
 TWILIO_AUTH_TOKEN = f"{twilio auth token}"
 TWILIO_TRIAL_NUMBER = f"{your twilio trial number}"
 NUMBERS = [
-    f"{number yuo want to send to}",
+    f"{number you want to send to}",
 ]
