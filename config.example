@@ -1,7 +1,11 @@
+NUMBERS = [
+    f"{number you want to send to}",
+]
+
+#Below are constants managed by lambda env variables
 MISSION_CLIFFS_ENDPONT = f"{mission cliffs ig endpoint}"
 TWILIO_SID = f"{twilio SID}"
 TWILIO_AUTH_TOKEN = f"{twilio auth token}"
 TWILIO_TRIAL_NUMBER = f"{your twilio trial number}"
-NUMBERS = [
-    f"{number you want to send to}",
-]
+BUCKET = "bucketname"
+UUID_OBJECT_KEY = "uuidkey"
